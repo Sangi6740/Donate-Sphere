@@ -1,0 +1,36 @@
+/* Store this code in 'style.css' file inside the 'static' folder*/
+
+.btn {
+    padding: 10px 40px;
+    background-color:black; 
+    color:white;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.textbox{
+    padding: 10px 40px;
+    background-color:skyblue; 
+    text-color: white;
+    border-radius: 10px;
+}
+    
+::placeholder {
+    color: #FFFFFF;
+    opacity: 1;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.word{
+    color: #FFFFFF;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.bottom{
+    color: #236B8E;
+    font-style: oblique;
+    font-weight: bold;
+}

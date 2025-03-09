@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Donation Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #aed9e0; /* Pastel blue background color */
+            color: #000000; /* Black text color */
+            font-family: Arial, sans-serif; /* Specify font family */
+            height: 100vh; /* Ensure full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .border {
+            width: 300px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background color */
+            border-radius: 10px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .textbox {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            background-color: #d4eff7; /* Pastel blue input background color */
+            color: #000000; /* Black text color */
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #b3e0f2; /* Light blue button background color */
+            color: #000000; /* Black text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #99d6eb; /* Darker blue button background color on hover */
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000; /* Black text color for links */
+            font-size: 16px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="border">
+        <div class="header">
+            <h1 class="word" style="font-size: 24px; color:black">CLOTHES DONATION FORM</h1>
+        </div>
+        <form method="POST" onsubmit="return submitForm();">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required class="textbox"><br>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required class="textbox"><br>
+
+            <label for="num_clothes" style="color: black;">Number of Clothes:</label>
+            <input type="number" id="num_clothes" name="num_clothes" required class="textbox"><br>
+
+
+            <label for="donation_type" style="color: black;">Type of Donation:</label>
+            <select id="donation_type" name="donation_type" required class="textbox">
+                <option value="Clothes">Clothes</option>
+            </select><br>
+
+
+            <input type="submit" value="Submit" class="btn">
+            <a href="/main">Previous Page</a>
+        </form>
+    </div>
+    <script>
+        function submitForm() {
+            // Code to display popup notification
+            alert("Thank you for your clothes donation!"); // Change the message as per your requirement
+            return true; // Return true to allow form submission
+        }
+    </script>
+</body>
+</html>

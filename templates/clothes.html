@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffcccc; /* Light red background color */
+            color: #000000; /* Black text color */
+            font-family: Arial, sans-serif; /* Specify font family */
+            height: 100vh; /* Ensure full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Align items vertically */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-bottom: 10px; /* Add space between buttons */
+            background-color: #ff9999; /* Light red button background color */
+            color: #000000; /* Black text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #ff6666; /* Darker red button background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>CHOICES ARE :</h1>
+    <form action="/fabric_defect_detection" method="GET">
+        <button type="submit">Fabric Defect Detection</button>
+    </form>
+    <form action="/clothesform" method="GET">
+        <button type="submit">Clothes Form</button>
+    </form>
+</body>
+</html>

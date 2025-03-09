@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .user-detail {
+            margin-bottom: 10px;
+        }
+        .label {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body {
+            background: url('static/profile.jpg') no-repeat center center fixed; /* Set background image */
+            background-size: cover; /* Cover the entire background */
+        }
+    </style>
+    <div class="container">
+        <h1>User Profile</h1>
+        {% for user in userdetails %}
+        <div class="user-detail">
+            <span class="label">User Name:</span>{{ user[1] }}
+        </div>
+        <div class="user-detail">
+            <span class="label">Name:</span>{{ user[1] }}
+        </div>
+        <div class="user-detail">
+            <span class="label">Email:</span>{{ user[2] }}
+        </div>
+        <div class="user-detail">
+            <span class="label">Address:</span>{{ user[3] }}
+        </div>
+        <div class="user-detail">
+            <span class="label">Phone:</span>{{ user[4] }}
+        </div>
+        {% endfor %}
+
+        <h2>Donation Details</h2>
+        {% for donation in donationdetails %}
+        <div class="user-detail">
+            <span class="label">Username:</span>{{ donation[0] }}
+            <span class="label">Date:</span>{{ donation[1] }}
+            <span class="label">Time:</span>{{ donation[2] }}
+            <span class="label">Type:</span>{{ donation[3] }}
+        </div>
+        <!-- Add more donation details here as needed -->
+        {% endfor %}
+        
+        
+        <br>
+        <a href ="/main">Main Page</a>
+        <a href="/logout">Logout</a>
+    </div>
+</body>
+</html>

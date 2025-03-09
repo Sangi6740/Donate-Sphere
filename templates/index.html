@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+{% block head %}
+<header>
+    <div class="container">
+       <div id="caption">
+<body>   
+   <script>
+      function validation(){
+            document.getElementById(("success-message")).style.display = "block" ;
+      
+      }  
+      
+   </script>
+ <h1><span class="logo-gold">Donate</span> Sphere</h1>
+      </div>
+       <nav>
+          <ul>
+             <li><a href="#Our Aim">Aim</a></li>
+             <li><a href="#Donation Choices">Donation Choices</a></li>
+             <li><a href="http://127.0.0.1:5000/profile">My Profile</a></li>
+             <li><a href="http://127.0.0.1:5000/logout"> Logout</a></li>
+            
+
+          </ul>
+       </nav>
+    </div>
+ </header>
+ {% endblock %}
+ {% block body %}
+
+
+ <!--end of header section-->
+ <!--Hero section-->
+ <section id="Hero">
+    <div class="container">
+       <div>
+          <h4>Donate Sphere</h4>
+          <p>Empower Change, Transform Lives, Donate Now! <br>Every Contribution Counts.</p>
+       </div>
+    </div>
+ </section>
+ <!--End of Hero section-->
+ <section id="seperate"></section>
+ <!--start of about section-->
+ <section id="Our Aim">
+    <div class="container">
+       <div class="about-box1">
+         <img src="{{url_for('static', filename='d1.jpeg')}} " width="400" height="300">
+       </div>
+       <div class="about-box2">
+            <h2>Our Aim</h2>
+            <p>Welcome to our donation platform where every act of giving counts. From clothing to monetary support, blood donations to volunteering time, and sharing books, each contribution plays a vital role in changing lives. Join us in our commitment to making a meaningful impact in our communities. Together, we can inspire hope and create positive change one donation at a time. Thank you for your generosity and for being a part of our journey towards a better world.</p>
+       </div>
+    </div>
+ </section>
+ <!--End of about section-->
+<section id="seperate"></section>
+ <!--skills section-->
+ <section id="skills">
+   <div class="container">
+       <h2 id="Donation Choices">Donation Choices</h2>
+       <a href="http://127.0.0.1:5000/clothes">
+           <div class="box card card-1">
+               <img src="{{url_for('static', filename='clothes.webp')}}" width="200px" height="200px">
+               <h3>Clothes</h3>
+               <p>Give your clothes a second chance to bring warmth and comfort to those in need.</p>
+           </div>
+       </a>
+       <a href="http://127.0.0.1:5000/money">
+           <div class="box card card-1">
+               <img src="{{url_for('static', filename='money.webp')}}" width="200px" height="220px">
+               <h3>Money</h3>
+               <p>Donate money to spark hope and transform lives.</p>
+           </div>
+       </a>
+       <a href="http://127.0.0.1:5000/blood">
+           <div class="box card card-1">
+               <img src="{{url_for('static', filename='blood.png')}}" width="200px" height="205px">
+               <h3>Blood</h3>
+               <p>Save lives with blood donations, and make a difference through volunteering your time.</p>
+           </div>
+       </a>
+       <a href="http://127.0.0.1:5000/volunteer">
+         <div class="box card card-1" style="margin-left: 120px;">
+               <img src="{{url_for('static', filename='volunteer.jpg')}}" width="200px" height="215px">
+               <h3>Volunteer</h3>
+               <p>Donate money to spark hope and transform lives.</p>
+           </div>
+       </a>
+       <a href="http://127.0.0.1:5000/books">
+         <div class="box card card-1" style="margin-left: 150px;">
+               <img src="{{url_for('static', filename='book.png')}}" width="200px" height="200px">
+               <h3>Books</h3>
+               <p>Share the joy of reading: donate books and open doors to new worlds for those in need.</p>
+           </div>
+       </a>
+   </div>
+</section>
+
+ <!--end o f skills section-->
+ <!--contact section-->
+ <section id="seperate1"></section>
+ <section style="background-color: lavenderblush">
+    <br>
+       <section id="forms">
+         <div class="container">
+            <h2 id="Stories"> How Donations Help</h2>
+            <div class="box card card-1">
+              <img src="{{url_for('static', filename='cdev.jpg')}} " width="220px" height="200px">
+               <h3> Community Development</h3>
+               <p> Your support has empowered communities to thrive and grow, fostering sustainable development initiatives that create lasting positive change for generations to come.
+               </p>
+            </div>
+            <div class="box card card-1">
+              <img src="{{url_for('static', filename='comm.jpg')}} " width="220px" height="220px">
+               <h3>Building Brighter Futures</h3>
+               <p>Through your book donations, we have established a community library. 
+               </p>
+            </div>
+            <div class="box card card-1">
+              <img src="{{url_for('static', filename='blood.png')}} " width="200px" height="205px">
+               <h3> Saving lives</h3>
+               <p> With blood donations and volunteering , we have been able to create a change in peoples lives.</p>
+            </div>
+     
+        
+         </div>
+      </br>
+ </section>
+ <!--end of contact section-->
+ <!--footer section-->
+ <footer>
+    <div class="container">
+       <p>Donate Sphere &copy; 2024|All Rights Reserved</p>
+    </div>
+ </footer>
+</body>
+
+{% endblock %}
